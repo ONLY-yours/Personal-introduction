@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">BarKotlin</string>
+    <string name="checkbutton">this is a check bar</string>
+
+
+    <string name="draw_open">this is a check bar</string>
+    <string name="drwa_close">this is a check bar</string>
+
+    <string name="page_title">page title</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

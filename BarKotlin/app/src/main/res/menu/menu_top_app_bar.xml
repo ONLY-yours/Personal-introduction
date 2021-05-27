@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:contentDescription="面对面快传"
+        android:title="面对面快传"
+        />
+
+    <item
+        android:contentDescription="扫一扫"
+        android:title="扫一扫"
+        />
+
+    <item
+        android:contentDescription="收付款"
+        android:title="收付款"
+        />
+</menu>

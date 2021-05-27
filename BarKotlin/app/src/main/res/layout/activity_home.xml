@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.main.HomeActivity">
+
+        <androidx.drawerlayout.widget.DrawerLayout
+            android:id="@+id/drawlayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fitsSystemWindows="true"
+            app:layout_constraintLeft_toLeftOf="parent">
+
+            <androidx.coordinatorlayout.widget.CoordinatorLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <com.google.android.material.appbar.AppBarLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <androidx.appcompat.widget.Toolbar
+                        android:id="@+id/toolbar"
+                        app:title="@string/page_title"
+                        app:menu="@menu/menu_top_app_bar"
+                        android:layout_width="match_parent"
+                        app:layout_scrollFlags="scroll"
+                        android:layout_height="?attr/actionBarSize"
+                        style="@style/Widget.AppCompat.Toolbar"
+                        app:navigationIcon="@drawable/ic_email"/>
+
+                </com.google.android.material.appbar.AppBarLayout>
+
+
+                <androidx.core.widget.NestedScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+                        <com.google.android.material.card.MaterialCardView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="10dp"
+                            android:layout_gravity="center"
+                            android:clickable="true"
+                            android:focusable="true"
+                            android:checkable="true"
+                            android:layout_margin="5dp"
+                            app:cardBackgroundColor="#c4c6c8"
+                            app:cardCornerRadius="10dp"
+                            app:cardElevation="10dp"
+                            app:cardPreventCornerOverlap="true"
+                            >
+
+                            <ImageView
+                                android:id="@+id/iv_cardview_demo"
+                                android:layout_width="200dp"
+                                android:layout_height="200dp"
+                                android:src="@mipmap/cardview_demo"/>
+
+                        </com.google.android.material.card.MaterialCardView>
+
+                        <com.google.android.material.chip.Chip
+                            android:layout_gravity="center"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            app:chipIcon="@drawable/ic_email"
+                            style="@style/Widget.MaterialComponents.ChipGroup"
+                            android:text="this is a image view"/>
+
+                        <com.google.android.material.chip.Chip
+                            android:layout_gravity="center"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            style="@style/Widget.MaterialComponents.ChipGroup"
+                            android:text="this is a image view"/>
+
+                        <com.google.android.material.chip.Chip
+                            android:layout_gravity="center"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            style="@style/Widget.MaterialComponents.ChipGroup"
+                            android:text="this is a image view"/>
+
+                        <com.google.android.material.chip.Chip
+                            android:layout_gravity="center"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            style="@style/Widget.MaterialComponents.ChipGroup"
+                            android:text="this is a image view"/>
+
+                    </LinearLayout>
+
+                </androidx.core.widget.NestedScrollView>
+
+
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/fab"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:borderWidth="0dp"
+                    style="@style/BaseFloatActionBar_blue"
+                    android:src="@drawable/ic_add"
+                    android:contentDescription="@string/checkbutton"
+                    android:layout_gravity="right|bottom"
+                    android:layout_margin="30dp"
+                    />
+
+
+            </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+
+            <com.google.android.material.navigation.NavigationView
+                android:id="@+id/navigation"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                app:itemBackground="@drawable/bg_home_left_drawer_menu_item"
+                app:itemTextColor="@drawable/home_left_drawer_menu_item_text"
+                app:menu="@menu/menu_navigation"
+
+                android:layout_gravity="start"
+                android:fitsSystemWindows="true"
+                app:headerLayout="@layout/head_layout"
+
+                app:itemIconTint="@color/color_gray"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"/>
+
+
+
+
+        </androidx.drawerlayout.widget.DrawerLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
