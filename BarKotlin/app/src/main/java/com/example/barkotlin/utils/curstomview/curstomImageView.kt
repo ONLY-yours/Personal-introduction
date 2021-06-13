@@ -18,7 +18,8 @@ import com.example.barkotlin.APP.context
  *     version: 1.0
  * </pre>
  */
-class curstomImageView(context: Context?,attrs: AttributeSet?) : androidx.appcompat.widget.AppCompatImageView(context,attrs){
+class curstomImageView(context: Context,attrs: AttributeSet?) : androidx.appcompat.widget.AppCompatImageView(
+    context,attrs){
     override fun onDraw(canvas: Canvas?) {
         super.onDraw(canvas)
         val paint = Paint()

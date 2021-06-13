@@ -75,29 +75,29 @@
                             style="@style/Widget.MaterialComponents.ChipGroup"
                             android:text="this is a image view"/>
 
-                        <com.google.android.material.chip.Chip
+                        <Button
+                            android:id="@+id/Amap"
+                            android:text="查看当前地图"
                             android:layout_gravity="center"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
                             android:layout_margin="10dp"
-                            style="@style/Widget.MaterialComponents.ChipGroup"
-                            android:text="this is a image view"/>
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
 
-                        <com.google.android.material.chip.Chip
+                        <Button
+                            android:id="@+id/Calculator"
+                            android:text="计算器"
+                            android:layout_margin="10dp"
                             android:layout_gravity="center"
                             android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_margin="10dp"
-                            style="@style/Widget.MaterialComponents.ChipGroup"
-                            android:text="this is a image view"/>
+                            android:layout_height="wrap_content"/>
 
-                        <com.google.android.material.chip.Chip
+                        <Button
+                            android:id="@+id/Calendar"
+                            android:text="日历"
+                            android:layout_margin="10dp"
                             android:layout_gravity="center"
                             android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_margin="10dp"
-                            style="@style/Widget.MaterialComponents.ChipGroup"
-                            android:text="this is a image view"/>
+                            android:layout_height="wrap_content"/>
 
                     </LinearLayout>
 
@@ -136,8 +136,6 @@
                 app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintBottom_toBottomOf="parent"/>
-
-
 
 
         </androidx.drawerlayout.widget.DrawerLayout>
